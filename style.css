@@ -154,11 +154,13 @@ header .container {
 }
 
 section.hero-section {
-    background-image: url(assets/images/hero-bg.jpg);
     min-height: calc(100vh - 100px);
     padding-block: 40px;
     display: flex;
     align-items: center;
+    background-image: url(assets/images/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .organic {
@@ -170,7 +172,7 @@ section.hero-section {
     font-size: clamp(40px, 4vw, 70px);
     font-weight: 700;
     width: 12ch;
-    margin-block: 0.8em;
+    margin-block: 0.5em;
     color: #F7C35F;
     position: relative;
 }
