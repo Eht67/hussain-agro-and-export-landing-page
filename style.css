@@ -206,3 +206,90 @@ section.hero-section {
     background-color: #bb9144;
     cursor: pointer;
 }
+
+section.intro-section {
+    background-color: #334B35;
+}
+
+section.intro-section .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-block: 100px 150px;
+}
+
+section.intro-section .container .left {
+    position: relative;
+}
+
+section.intro-section .container .left>img {
+    width: 100%;
+}
+
+section.intro-section .container .left .yellow-element {
+    width: 15px;
+    height: 200px;
+    background-color: #F7C35F;
+    position: absolute;
+    bottom: 20px;
+    left: -15px;
+    border-radius: 4px 0 0 4px;
+}
+
+section.intro-section .container .left .info-card {
+    position: absolute;
+    bottom: -7%;
+    left: 10%;
+    width: 80%;
+    background-color: #6D8C54;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+section.intro-section .container .left .info-card img {
+    border-right: 1px solid #f7c25f7e;
+    padding: 10px 20px 10px 0;
+}
+
+section.intro-section .container .left .info-card .info-card-data .number {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+section.intro-section .container .right {
+    padding: 30px 50px;
+}
+
+section.intro-section .container .right .section-heading-large {
+    font-size: clamp(24px, 6vw, 36px);
+    width: 20ch;
+    margin-block: 1em;
+}
+
+section.intro-section .container .right .golden-section-desc {
+    font-size: 22px;
+    color: #F7C35F;
+    margin-bottom: 1em;
+}
+
+section.intro-section .container .right .section-desc {
+    margin-bottom: 50px;
+}
+
+section.intro-section .container .right .intro-list {
+    display: grid;
+    gap: 20px;
+}
+
+section.intro-section .container .right .intro-list li {
+    display: flex;
+    align-items: center;
+}
+section.intro-section .container .right .intro-list li::before {
+    content: url(assets/images/tick.svg);
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 5px;
+}

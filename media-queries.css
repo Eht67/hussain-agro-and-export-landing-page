@@ -1,3 +1,9 @@
+@media (max-width:1290px) {
+    section.intro-section .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width:960px) {
     .hamburger {
         display: block;
@@ -30,5 +36,26 @@
 
     .menu-list a:hover{
         color: #000;
+    }
+
+    section.intro-section .container {
+        grid-template-columns: 100%;
+        gap: 100px;
+    }
+}
+
+@media (max-width:360px) {
+    section.intro-section .container .left .info-card {
+        flex-direction: column;
+        bottom: -30%;
+    }
+
+    section.intro-section .container .left .info-card > img {
+        border: none;
+        padding: 0;
+    }
+
+    section.intro-section .container .right {
+        padding: 50px 0 0;
     }
 }
