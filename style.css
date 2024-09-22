@@ -225,7 +225,7 @@ section.intro-section::before {
 section.intro-section .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-block: 100px 150px;
+    padding-block: 100px;
 }
 
 section.intro-section .container .left {
@@ -274,13 +274,13 @@ section.intro-section .container .right {
     position: relative;
 }
 
-section.intro-section .container .right .section-heading-large {
+.section-heading-large {
     font-size: clamp(24px, 6vw, 36px);
     width: 20ch;
     margin-block: 1em;
 }
 
-section.intro-section .container .right .golden-section-desc {
+.golden-section-desc {
     font-size: 22px;
     color: #F7C35F;
     margin-bottom: 1em;
@@ -299,9 +299,51 @@ section.intro-section .container .right .intro-list li {
     display: flex;
     align-items: center;
 }
+
 section.intro-section .container .right .intro-list li::before {
     content: url(assets/images/tick.svg);
     margin-right: 10px;
     display: inline-block;
     margin-top: 5px;
+}
+
+section.fruit-veg-section{
+    background-color: #334B35;
+    padding-block: 80px 160px;
+}
+
+section.fruit-veg-section .section-heading-small,
+section.fruit-veg-section .section-heading-large {
+    width: initial;
+    text-align: center;
+}
+
+section.fruit-veg-section .veg-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 50px;
+}
+
+section.fruit-veg-section .veg-grid .veg-item {
+    background-color: #ffffff1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    aspect-ratio: 1;
+    border-radius: 12px;
+}
+
+section.fruit-veg-section .veg-grid .veg-item:hover{
+    background-color: #F7C35F;
+}
+
+section.fruit-veg-section .veg-grid .veg-item:hover p{
+    color: #000;
+}
+
+section.fruit-veg-section .veg-grid .veg-item p{
+    font-size: 18px;
+    font-weight: 600;
 }
