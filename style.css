@@ -209,6 +209,17 @@ section.hero-section {
 
 section.intro-section {
     background-color: #334B35;
+    position: relative;
+}
+
+section.intro-section::before {
+    content: '';
+    width: 30%;
+    aspect-ratio: 4/3;
+    background-color: #263C28;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 section.intro-section .container {
@@ -260,6 +271,7 @@ section.intro-section .container .left .info-card .info-card-data .number {
 
 section.intro-section .container .right {
     padding: 30px 50px;
+    position: relative;
 }
 
 section.intro-section .container .right .section-heading-large {
