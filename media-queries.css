@@ -52,6 +52,11 @@
     section.fruit-veg-section .veg-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    section.contact-section .container {
+        grid-template-columns: 100%;
+        gap: 50px;
+    }
 }
 
 @media (max-width:700px) {
