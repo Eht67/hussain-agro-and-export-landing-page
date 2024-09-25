@@ -38,6 +38,7 @@ html {
     font-family: livvic, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #fff;
     scroll-behavior: smooth;
+    scroll-padding: 100px;
 }
 
 img {
@@ -80,7 +81,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 12;
-}   
+    border-bottom: 1px solid #f7c25f7a;
+}
 
 header .container {
     display: flex;
@@ -143,16 +145,12 @@ header .container {
 
 .menu-list a {
     font-size: 18px;
-    color: #aaa;
+    color: #fff;
     line-height: 1.5;
+    border-bottom: 2px solid #00000000;
 }
 
 .menu-list a:hover {
-    color: #fff;
-}
-
-.menu-list a.active {
-    color: #fff;
     border-bottom: 2px solid #F7C35F;
 }
 
@@ -310,7 +308,7 @@ section.intro-section .container .right .intro-list li::before {
     margin-top: 5px;
 }
 
-section.fruit-veg-section{
+section.fruit-veg-section {
     background-color: #334B35;
     padding-block: 80px 160px;
 }
@@ -321,9 +319,9 @@ section.fruit-veg-section .section-heading-large {
     text-align: center;
 }
 
-section.fruit-veg-section .veg-grid{
+section.fruit-veg-section .veg-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     gap: 50px;
 }
 
@@ -338,15 +336,15 @@ section.fruit-veg-section .veg-grid .veg-item {
     border-radius: 12px;
 }
 
-section.fruit-veg-section .veg-grid .veg-item:hover{
+section.fruit-veg-section .veg-grid .veg-item:hover {
     background-color: #F7C35F;
 }
 
-section.fruit-veg-section .veg-grid .veg-item:hover p{
+section.fruit-veg-section .veg-grid .veg-item:hover p {
     color: #000;
 }
 
-section.fruit-veg-section .veg-grid .veg-item p{
+section.fruit-veg-section .veg-grid .veg-item p {
     font-size: 18px;
     font-weight: 600;
 }

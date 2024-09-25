@@ -5,6 +5,9 @@
     section.intro-section::before {
         display: none;
     }
+    section.fruit-veg-section .veg-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 @media (max-width:960px) {
@@ -17,7 +20,7 @@
         gap: 0;
         background-color: #fff;
         top: 100px;
-        right: -200px;
+        right: -270px;
         border-radius: 12px;
     }
 
@@ -45,6 +48,22 @@
         grid-template-columns: 100%;
         gap: 100px;
     }
+
+    section.fruit-veg-section .veg-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width:700px) {
+    section.fruit-veg-section .veg-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:510px) {
+    section.fruit-veg-section .veg-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width:360px) {
@@ -62,3 +81,4 @@
         padding: 50px 0 0;
     }
 }
+

@@ -1,3 +1,4 @@
+// open and close menu and show/hide backdrop
 let menu = document.querySelector('#menu');
 let menuToggler = document.querySelector('#hamburger');
 let backdrop = document.querySelector('#backdrop');
@@ -13,7 +14,7 @@ const toggleMenu = () => {
     }
 
     else if (isMenuOpen) {
-        menu.style.right = '-200px';
+        menu.style.right = '-270px';
         backdrop.style.width = '0vw';
         menuToggler.classList.remove('is-active');
         isMenuOpen = false;
@@ -22,7 +23,7 @@ const toggleMenu = () => {
 
 const closeMenu = () => {
     if (isMenuOpen) {
-        menu.style.right = '-200px';
+        menu.style.right = '-270px';
         backdrop.style.width = '0vw';
         menuToggler.classList.remove('is-active');
         isMenuOpen = false;
