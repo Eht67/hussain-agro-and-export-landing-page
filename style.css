@@ -393,6 +393,7 @@ section.contact-section .container .right textarea{
     outline: #F7C35F;
     color: #fff;
     font-family: inherit;
+    caret-color: #F7C35F;
 }
 
 section.contact-section .container .right input::placeholder,
